@@ -8,3 +8,7 @@
 # 파이썬 기초
 
 [파이썬 기초 문법](https://github.com/hs-krispy/Data-analysis/blob/master/python.md)
+
+# 환경설정
+
+[기본 환경설정](https://github.com/hs-krispy/Data-analysis/blob/master/setting.md)
