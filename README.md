@@ -4,3 +4,7 @@
 <img src="http://image.yes24.com/goods/72227684/800x0" width = 40% height = 40%>
 
 저자 - 송석리, 이현아
+
+# 파이썬 기초
+
+[파이썬 기초 문법](C:\Users\0864h\Desktop\python.md)
