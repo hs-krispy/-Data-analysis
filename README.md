@@ -7,4 +7,4 @@
 
 # 파이썬 기초
 
-[파이썬 기초 문법](C:\Users\0864h\Desktop\python.md)
+[파이썬 기초 문법](https://github.com/hs-krispy/Data-analysis/blob/master/python.md)
