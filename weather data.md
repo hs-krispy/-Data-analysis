@@ -65,7 +65,7 @@ f.close()
 print('기상 관측 이래 서울의 최고 기온이 가장 높았던 날은',max_date+'로,', max_temp,'도 였습니다.')
 ```
 
-<img src="https://user-images.githubusercontent.com/58063806/74665601-5d1f9b80-51e3-11ea-8eae-270ecef5e7c4.JPG" alt="3" width=40% height=40% />
+<img src="https://user-images.githubusercontent.com/58063806/74665601-5d1f9b80-51e3-11ea-8eae-270ecef5e7c4.JPG" alt="3" width=50% height=50% />
 
 리스트의 형태이므로 인덱싱을 통해 특정값 구할수있음
 
