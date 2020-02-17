@@ -13,6 +13,6 @@
 
 [기본 환경설정](https://github.com/hs-krispy/Data-analysis/blob/master/setting.md)
 
-# 첫째마당
+# Chapter 1
 
-[기온 공공데이터](https://github.com/hs-krispy/Data-analysis/blob/master/weather data.md)
+[기온 공공데이터](https://github.com/hs-krispy/Data-analysis/blob/master/chap1.md)
