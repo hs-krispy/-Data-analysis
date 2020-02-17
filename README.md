@@ -15,4 +15,4 @@
 
 # 첫째마당
 
-[기온 공공데이터]((https://github.com/hs-krispy/Data-analysis/blob/master/weather data.md))
+[기온 공공데이터](https://github.com/hs-krispy/Data-analysis/blob/master/weather data.md)
