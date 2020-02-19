@@ -16,3 +16,7 @@
 # Chapter 1
 
 [기온 공공데이터](https://github.com/hs-krispy/Data-analysis/blob/master/chap1.md)
+
+# Chapter 2
+
+ [데이터 시각화](https://github.com/hs-krispy/Data-analysis/blob/master/chap2.md)
