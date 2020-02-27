@@ -7,16 +7,18 @@
 
 # 파이썬 기초
 
-[파이썬 기초 문법](https://github.com/hs-krispy/Data-analysis/blob/master/python.md)
+- [파이썬 기초 문법](https://github.com/hs-krispy/Data-analysis/blob/master/python.md)
 
 # 환경설정
 
-[기본 환경설정](https://github.com/hs-krispy/Data-analysis/blob/master/setting.md)
+- [기본 환경설정](https://github.com/hs-krispy/Data-analysis/blob/master/setting.md)
 
 # Chapter 1
 
-[기온 공공데이터](https://github.com/hs-krispy/Data-analysis/blob/master/chap1.md)
+- [기온 공공데이터](https://github.com/hs-krispy/Data-analysis/blob/master/chap1.md)
 
 # Chapter 2
 
- [데이터 시각화](https://github.com/hs-krispy/Data-analysis/blob/master/chap2.md)
+- [데이터 시각화](https://github.com/hs-krispy/Data-analysis/blob/master/chap2.md)
+
+- [데이터 시각화 2](https://github.com/hs-krispy/Data-analysis/blob/master/chap2(2).md)
