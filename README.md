@@ -22,3 +22,7 @@
 - [데이터 시각화](https://github.com/hs-krispy/Data-analysis/blob/master/chap2.md)
 
 - [데이터 시각화 2](https://github.com/hs-krispy/Data-analysis/blob/master/chap2(2).md)
+
+# Chapter 3
+
+- [인구 공공데이터](https://github.com/hs-krispy/Data-analysis/blob/master/chap3.md)
