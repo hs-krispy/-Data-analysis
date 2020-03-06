@@ -26,3 +26,4 @@
 # Chapter 3
 
 - [인구 공공데이터](https://github.com/hs-krispy/Data-analysis/blob/master/chap3.md)
+- [성별에 따른 인구데이터](https://github.com/hs-krispy/Data-analysis/blob/master/chap3(2).md)
