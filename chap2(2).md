@@ -2,7 +2,7 @@
 
 ### 히스토그램
 
-자료의 분포 상태를 직사각형 모양의 막대 그래프로 나타낸 것
+자료의 분포 상태를 직사각형 모양의 막대 그래프로 나타낸 것 **(자료가 연속적일 경우)**
 
 ##### (데이터의 빈도에 따라 높이가 결정)
 
@@ -96,3 +96,27 @@ plt.show()
 
 <img src="https://user-images.githubusercontent.com/58063806/75471680-e732e580-59d5-11ea-8ebf-a497b0b7fc11.JPG" alt="실행결과" width=50% height=50%/>
 
+```python
+import csv
+import matplotlib.pyplot as plt
+f = open('seoul.csv')
+data = csv.reader(f)
+next(data)
+day = []
+for i in range(31):
+    day.append([])#day리스트안에 31개 리스트 생성
+for row in data:
+    if row[-1]!='':
+        if row[0].split('-').[1]==8:
+            day[int(row[0].split('-').[2])-1].append(float(row[-1]))
+            #0~30번까지 인덱스에 일별 데이터 저장
+plt.style.use('ggplot')
+plt.figure(figsize=(10,5), dpi=300)#그래프의 크기를 가로10, 세로5로 지정
+plt.boxplot(day, showfilters=False)
+plt.rcParams['axes.unicode_minus']=False
+plt.show()
+```
+
+boxplot의 **showfilters속성** - 이상치 값을 보이지않게함
+
+<img src="https://user-images.githubusercontent.com/58063806/76705121-10b37700-6721-11ea-8c0f-8f9fd62a70e4.JPG" alt="실행결과" width=80% />
