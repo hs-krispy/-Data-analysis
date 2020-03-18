@@ -159,7 +159,7 @@ for row in data:
         for i in range(3, 104):
             m.append(int(row[i].replace(',','')))
             f.append(int(row[i+103].replace(',','')))       				
-      size.append(math.sqrt(int(row[i].replace(',',''))+int(row[i+103].replace(',',''))))
+            size.append(math.sqrt(int(row[i].replace(',',''))+int(row[i+103].replace(',',''))))
         break
 import matplotlib.pyplot as plt
 plt.style.use('ggplot')
