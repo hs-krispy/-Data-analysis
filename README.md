@@ -27,4 +27,4 @@
 
 - [인구 공공데이터](https://github.com/hs-krispy/Data-analysis/blob/master/chap3.md)
 - [성별에 따른 인구데이터](https://github.com/hs-krispy/Data-analysis/blob/master/chap3(2).md)
-- [파이차트](https://github.com/hs-krispy/Data-analysis/blob/master/chap3(3).md)
+- [파이차트, 산점도](https://github.com/hs-krispy/Data-analysis/blob/master/chap3(3).md)
