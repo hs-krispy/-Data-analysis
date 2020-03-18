@@ -158,7 +158,8 @@ for row in data:
     if name in row[0]:
         for i in range(3, 104):
             m.append(int(row[i].replace(',','')))
-            f.append(int(row[i+103].replace(',','')))       				  				  		size.append(math.sqrt(int(row[i].replace(',',''))+                    										  int(row[i+103].replace(',',''))))
+            f.append(int(row[i+103].replace(',','')))       				
+      size.append(math.sqrt(int(row[i].replace(',',''))+int(row[i+103].replace(',',''))))
         break
 import matplotlib.pyplot as plt
 plt.style.use('ggplot')
@@ -177,7 +178,7 @@ size리스트에 각 연령의 남성과 여성 인구수를 합친 값을 넣�
 
 (color속성에 점들의 크기가 들어가있는 size리스트를 넣어주면 크기에 따라 점들의 색 표현가능)
 
-- 남녀인구수의 합에 sqrt로 제곱근을 취해주지 않았을때
+- 남녀인구수의 합에 sqrt로 제곱근을 취해주지 않았을때 (점들의 크기가 너무 커져서 그래프가 이상해짐)
 
 <img src="https://user-images.githubusercontent.com/58063806/76937413-1b942480-6938-11ea-98b5-797ad2170948.JPG" alt="실행결과" width=80% />
 
