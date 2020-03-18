@@ -87,3 +87,103 @@ EX) 남, 여 순이지만 12시정각에서 여자 데이터부터 시작
 
 <img src="https://user-images.githubusercontent.com/58063806/76631368-f2b10f80-6584-11ea-807e-92839ff83fb9.JPG" alt="실행결과" width=50% />
 
+###  산점도
+
+산점도는 가로축과 세로축을 기준으로 두 요소가 서로 어떤 관계를 맺고 있는지를 파악하기 쉽게 나타낸 그래프
+
+``` python
+import matplotlib.pyplot as plt
+plt.scatter([1,2,3,4], [10,30,20,40], c=['red', 'blue', 'green', 'gold'], s=[100,200,250,300])
+plt.show()
+```
+
+c(color)속성 - 각 점의 색상을 정함
+
+s(size)속성 - 각 점의 크기를 정함
+
+<img src="https://user-images.githubusercontent.com/58063806/76937410-1afb8e00-6938-11ea-90ff-0f3b2928a764.JPG" alt="실행결과" width=60% />
+
+``` python
+import matplotlib.pyplot as plt
+plt.scatter([1,2,3,4], [10,30,20,40], c=range(4), cmap='jet', s=[100,200,250,300])
+#jet컬러맵 - 무지개색과 비슷
+plt.colorbar()
+plt.show()
+```
+
+c=range(4) : 4개의 점들을 각각 다른색으로 표현하기 위해서 사용
+
+cmap속성 - 컬러바에 사용될 색상의 종류를 정할 수 있음
+
+<img src="https://user-images.githubusercontent.com/58063806/76937411-1b942480-6938-11ea-8768-10216c64687d.JPG" alt="실행결과" width=60% />
+
+``` python
+import csv
+f = open('gender.csv')
+data = csv.reader(f)
+m = []
+f = []
+name = input('궁금한 동네 입력 : ')
+for row in data:
+    if name in row[0]:
+        for i in range(3, 104):
+            m.append(int(row[i].replace(',','')))
+            f.append(int(row[i+103].replace(',','')))
+        break
+import matplotlib.pyplot as plt
+plt.scatter(m, f, c=range(101), alpha=0.5, cmap='jet')
+plt.colorbar()
+plt.plot(range(max(m)), range(max(m)), 'g')# 남성 인구중 가장 큰 값을 기준
+plt.show()
+```
+
+alpha속성 - 투명도를 조절할 수 있으며 0에 가까울수록 투명하고 1에 가까울수록 불투명하다
+
+##### plt.plot()으로 남성 인구수 중 가장 큰 값을 기준으로 y=x 형태의 직선 (**추세선**)을 만들어서 **해당 나이대에서**
+
+**어떤 성별의 인구가 더 많은지** 보기 쉽게함
+
+<img src="https://user-images.githubusercontent.com/58063806/76938215-96117400-6939-11ea-84d6-75241e98e35c.JPG" alt="실행결과" width=60% />
+
+``` python
+import csv
+import math
+f = open('gender.csv')
+data = csv.reader(f)
+m = []
+f = []
+size = []
+name = input('궁금한 동네 입력 : ')
+for row in data:
+    if name in row[0]:
+        for i in range(3, 104):
+            m.append(int(row[i].replace(',','')))
+            f.append(int(row[i+103].replace(',','')))       				  				  		size.append(math.sqrt(int(row[i].replace(',',''))+                    										  int(row[i+103].replace(',',''))))
+        break
+import matplotlib.pyplot as plt
+plt.style.use('ggplot')
+plt.rc('font', family='Malgun Gothic')
+plt.figure(figsize=(10,5), dpi=300)
+plt.title(name+' 지역의 성별 인구 그래프')
+plt.scatter(m, f, c=range(101), alpha=0.5, cmap='jet', s=size)
+plt.colorbar()
+plt.plot(range(max(m)), range(max(m)), 'g')
+plt.xlabel('남성 인구수')# x축에 레이블 추가
+plt.ylabel('여성 인구수')# y축에 레이블 추가
+plt.show()
+```
+
+size리스트에 각 연령의 남성과 여성 인구수를 합친 값을 넣어주고 그 값의 크기에 따라 점들의 색을 결정
+
+(color속성에 점들의 크기가 들어가있는 size리스트를 넣어주면 크기에 따라 점들의 색 표현가능)
+
+- 남녀인구수의 합에 sqrt로 제곱근을 취해주지 않았을때
+
+<img src="https://user-images.githubusercontent.com/58063806/76937413-1b942480-6938-11ea-98b5-797ad2170948.JPG" alt="실행결과" width=80% />
+
+- 남녀인구수의 합에 sqrt로 제곱근을 취해주었을 때
+
+<img src="https://user-images.githubusercontent.com/58063806/76937407-19ca6100-6938-11ea-9e8a-38763642265c.JPG" alt="실행결과" width=80% />
+
+
+
