@@ -1,8 +1,6 @@
-## 대중교통 데이터
+## 지하철 유무임별 데이터
 
-[대중교통 데이터 내려받기](https://pay.tmoney.co.kr/ncs/pct/ugd/ReadTrcrStstList.dev)에서 지하철 유무임별 이용현황을 다운하고 '작업일시' 데이터 열을 삭제하고
-
-csv파일로 변환
+[대중교통 데이터 내려받기](https://pay.tmoney.co.kr/ncs/pct/ugd/ReadTrcrStstList.dev)에서 지하철 이용현황을 다운하고 '작업일시' 데이터 열을 삭제하고 csv파일로 변환
 
 ``` python
 import csv
@@ -98,7 +96,7 @@ for row in data:
     for i in range(4,8):
         row[i] = int(row[i])
     plt.title(row[3]+' '+row[1])
-    plt.pie(row[4:8], labels=label, colors=c, autopct="%1.f%%")
+    plt.pie(row[4:8], labels=label, colors=c, autopct="%.1f%%")# 소수점 한자리까지
     plt.savefig(row[3]+' '+row[1]+'.png')# row[3]+' '+row[1]+'.png'이 파일이름
     plt.axis('equal')
     plt.show()
@@ -108,4 +106,4 @@ savefig() 함수 - 그래프를 이미지로 저장함
 
 아래와 같은 파이차트가 각 역마다 생성되서 컴퓨터에 저장된다.
 
-<img src="https://user-images.githubusercontent.com/58063806/77044068-1ef3e280-6a02-11ea-93a4-7bf2bd7b38da.JPG" alt="실행결과" width=50% />
+<img src="https://user-images.githubusercontent.com/58063806/77545494-d6e72b00-6eed-11ea-9a33-1818bac6bbd9.JPG" alt="실행결과" width=50% />
