@@ -4,7 +4,7 @@
 
 ## 인구 공공데이터
 
-[행정안전부 홈페이지](www.mois.go.kr)에서 csv파일 다운
+[행정안전부 홈페이지](http://27.101.213.4/index.jsp#)에서 csv파일 다운
 
 ``` python
 import csv
