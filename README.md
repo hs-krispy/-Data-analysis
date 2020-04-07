@@ -38,3 +38,4 @@
 # Chapter 5
 
 - [Numpy 라이브러리](https://github.com/hs-krispy/Data-analysis/blob/master/chap5.md)
+- [인구 데이터 활용](https://github.com/hs-krispy/Data-analysis/blob/master/chap5(2).md)
